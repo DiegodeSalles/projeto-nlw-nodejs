@@ -1,0 +1,34 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+  "title": 111,
+  "details": 123,
+  "maximumAttendees": "5"
+}
+
+###
+
+POST http://localhost:3333/events/7e547569-d8c0-486f-9105-8a043931b2fc/attendees
+Content-Type: application/json
+
+{
+  "name": "Diego",
+  "email": "diego@gmail.com"
+}
+
+###
+
+GET http://localhost:3333/events/7e547569-d8c0-486f-9105-8a043931b2fc
+
+###
+
+GET http://localhost:3333/attendees/11/badge
+
+###
+
+GET http://localhost:3333/attendees/1/check-in
+
+###
+
+GET http://localhost:3333/events/7e547569-d8c0-486f-9105-8a043931b2fc/attendees?query=diego
