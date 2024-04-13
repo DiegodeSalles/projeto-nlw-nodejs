@@ -17,7 +17,7 @@ npm install
 Na raíz do projeto crie um arquivo chamado '.env' e dentro dele, insira:
 
 ```bash
-DATABASE_URL=file:/.nome-do-banco.db
+DATABASE_URL=file:./nome-do-banco.db
 ```
 
 
